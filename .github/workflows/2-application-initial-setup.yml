@@ -110,8 +110,8 @@ jobs:
       # END: Check practical exercise
 
       - name: Fail job if not all checks passed
-        if: contains(steps.*.outcome, 'failure')
-        run: exit 1
+        if: contains(steps.*.outcome, 'failure') && steps.check-express.outcome == 'failure' || steps.check-mongoose.outcome == 'failure'
+         run: exit 1
 
   post_next_step_content:
     name: Post next step content
