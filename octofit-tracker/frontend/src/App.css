@@ -1,0 +1,17 @@
+#root {
+  width: 100%;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  color: #646cff;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
